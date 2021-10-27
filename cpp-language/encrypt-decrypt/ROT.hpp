@@ -43,8 +43,8 @@ public:
         for(int i = 0; i < input_string.size(); i++) {
 
             char character = input_string.at(i);
-            if(character >= 'A' && character <= 'Z') output_string.push_back(((int)character - (int)'A' - rot + 26) % 26 + 'A');
-            else if(character >= 'a' && character <= 'z') output_string.push_back(((int)character - (int)'a' - rot + 26) % 26 + 'a');
+            if(character >= 'A' && character <= 'Z') output_string.push_back(((int)character - int('A') + rot + 26) % 26 + 'A');
+            else if(character >= 'a' && character <= 'z') output_string.push_back(((int)character - (int)'a' + rot + 26) % 26 + 'a');
             else output_string.push_back(character);
         }
         return output_string;
