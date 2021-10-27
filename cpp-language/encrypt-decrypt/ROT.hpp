@@ -1,8 +1,12 @@
+/*
+    Author : กร โรจน์รัตนปัญญา (64010009)
+*/
+
 #pragma once
 
 #include <string>
 
-// เข้ารหัส/ถอดรหัสโดยใช้ ROT
+// เข้ารหัส / ถอดรหัสโดยใช้ ROT
 class ROT {
 public:
     
